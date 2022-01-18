@@ -1,0 +1,99 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/table/lib/css/table.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+:root {
+  --neutral-rep-background: linear-gradient(90deg,#a17f02 0,#edba03);
+  --friendly-rep-background: linear-gradient(90deg,#074a00 0,#0f9601);
+  --honored-rep-background: linear-gradient(90deg, rgb(6, 59, 0) 0px, rgb(12, 120, 1));
+  --revered-rep-background: linear-gradient(90deg, rgb(6, 59, 0) 0px, rgb(12, 120, 1));
+  --exalted-rep-background: linear-gradient(90deg,#196855 0,#28a687);
+}
+
+body {
+  margin: 0 auto;
+}
+
+.loader {
+  margin: 100px auto;
+}
+
+.loaderMessage {
+  text-align: center;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+}
+.user-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+table,
+th,
+td {
+  padding: 2px 6px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0rem 4rem;
+}
+
+.grid-item-reputation {
+  padding: 2rem;
+}
+
+
+
+.progress-outer {
+  background-color: rgb(18, 20, 20);
+  box-shadow: rgb(0 0 0) 0px 0px 16px inset;
+  color: rgb(232, 230, 227);
+}
+
+.progress-inner {
+  background-color: initial;
+
+  height:2rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.neutral-rep {
+  background-image: var(--neutral-rep-background);
+}
+
+.friendly-rep {
+  background-image: var(--friendly-rep-background);
+}
+
+.honored-rep {
+  background-image: var(--honored-rep-background);
+}
+
+.revered-rep {
+  background-image: var(--revered-rep-background);
+}
+
+.exalted-rep {
+  background-image: var(--exalted-rep-background);
+}
+
+.progress-text {
+  font-size: 1.5rem;
+  position:absolute;
+  transform:translateX(50%)
+}

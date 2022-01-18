@@ -1,0 +1,1 @@
+Example-client for bnet authentication with passport-bnet and a node API.
